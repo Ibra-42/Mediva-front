@@ -1,0 +1,122 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?dbd1f72b934fb18a26b7f1167cdd172b") format("truetype"),
+url("./flaticon.woff?dbd1f72b934fb18a26b7f1167cdd172b") format("woff"),
+url("./flaticon.woff2?dbd1f72b934fb18a26b7f1167cdd172b") format("woff2"),
+url("./flaticon.eot?dbd1f72b934fb18a26b7f1167cdd172b#iefix") format("embedded-opentype"),
+url("./flaticon.svg?dbd1f72b934fb18a26b7f1167cdd172b#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+}
+
+$flaticon-map: (
+    "loupe": "\f101",
+    "pin": "\f102",
+    "caduceus": "\f103",
+    "brain": "\f104",
+    "tooth": "\f105",
+    "kidneys": "\f106",
+    "heart": "\f107",
+    "bones": "\f108",
+    "checked": "\f109",
+    "doctor": "\f10a",
+    "wall-clock": "\f10b",
+    "phone-call": "\f10c",
+    "email": "\f10d",
+    "calendar": "\f10e",
+    "money": "\f10f",
+    "like": "\f110",
+    "left-quote": "\f111",
+    "tick": "\f112",
+    "dashboard": "\f113",
+    "appointment": "\f114",
+    "medical": "\f115",
+    "invoice": "\f116",
+    "review": "\f117",
+    "padlock": "\f118",
+    "enter": "\f119",
+);
+
+.flaticon-loupe:before {
+    content: map-get($flaticon-map, "loupe");
+}
+.flaticon-pin:before {
+    content: map-get($flaticon-map, "pin");
+}
+.flaticon-caduceus:before {
+    content: map-get($flaticon-map, "caduceus");
+}
+.flaticon-brain:before {
+    content: map-get($flaticon-map, "brain");
+}
+.flaticon-tooth:before {
+    content: map-get($flaticon-map, "tooth");
+}
+.flaticon-kidneys:before {
+    content: map-get($flaticon-map, "kidneys");
+}
+.flaticon-heart:before {
+    content: map-get($flaticon-map, "heart");
+}
+.flaticon-bones:before {
+    content: map-get($flaticon-map, "bones");
+}
+.flaticon-checked:before {
+    content: map-get($flaticon-map, "checked");
+}
+.flaticon-doctor:before {
+    content: map-get($flaticon-map, "doctor");
+}
+.flaticon-wall-clock:before {
+    content: map-get($flaticon-map, "wall-clock");
+}
+.flaticon-phone-call:before {
+    content: map-get($flaticon-map, "phone-call");
+}
+.flaticon-email:before {
+    content: map-get($flaticon-map, "email");
+}
+.flaticon-calendar:before {
+    content: map-get($flaticon-map, "calendar");
+}
+.flaticon-money:before {
+    content: map-get($flaticon-map, "money");
+}
+.flaticon-like:before {
+    content: map-get($flaticon-map, "like");
+}
+.flaticon-left-quote:before {
+    content: map-get($flaticon-map, "left-quote");
+}
+.flaticon-tick:before {
+    content: map-get($flaticon-map, "tick");
+}
+.flaticon-dashboard:before {
+    content: map-get($flaticon-map, "dashboard");
+}
+.flaticon-appointment:before {
+    content: map-get($flaticon-map, "appointment");
+}
+.flaticon-medical:before {
+    content: map-get($flaticon-map, "medical");
+}
+.flaticon-invoice:before {
+    content: map-get($flaticon-map, "invoice");
+}
+.flaticon-review:before {
+    content: map-get($flaticon-map, "review");
+}
+.flaticon-padlock:before {
+    content: map-get($flaticon-map, "padlock");
+}
+.flaticon-enter:before {
+    content: map-get($flaticon-map, "enter");
+}

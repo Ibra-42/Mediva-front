@@ -1,0 +1,114 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "flaticon";
+  src: url("./flaticon.ttf?dbd1f72b934fb18a26b7f1167cdd172b") format("truetype"), url("./flaticon.woff?dbd1f72b934fb18a26b7f1167cdd172b") format("woff"), url("./flaticon.woff2?dbd1f72b934fb18a26b7f1167cdd172b") format("woff2"), url("./flaticon.eot?dbd1f72b934fb18a26b7f1167cdd172b#iefix") format("embedded-opentype"), url("./flaticon.svg?dbd1f72b934fb18a26b7f1167cdd172b#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+  font-family: flaticon !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+}
+
+.flaticon-loupe:before {
+  content: "";
+}
+
+.flaticon-pin:before {
+  content: "";
+}
+
+.flaticon-caduceus:before {
+  content: "";
+}
+
+.flaticon-brain:before {
+  content: "";
+}
+
+.flaticon-tooth:before {
+  content: "";
+}
+
+.flaticon-kidneys:before {
+  content: "";
+}
+
+.flaticon-heart:before {
+  content: "";
+}
+
+.flaticon-bones:before {
+  content: "";
+}
+
+.flaticon-checked:before {
+  content: "";
+}
+
+.flaticon-doctor:before {
+  content: "";
+}
+
+.flaticon-wall-clock:before {
+  content: "";
+}
+
+.flaticon-phone-call:before {
+  content: "";
+}
+
+.flaticon-email:before {
+  content: "";
+}
+
+.flaticon-calendar:before {
+  content: "";
+}
+
+.flaticon-money:before {
+  content: "";
+}
+
+.flaticon-like:before {
+  content: "";
+}
+
+.flaticon-left-quote:before {
+  content: "";
+}
+
+.flaticon-tick:before {
+  content: "";
+}
+
+.flaticon-dashboard:before {
+  content: "";
+}
+
+.flaticon-appointment:before {
+  content: "";
+}
+
+.flaticon-medical:before {
+  content: "";
+}
+
+.flaticon-invoice:before {
+  content: "";
+}
+
+.flaticon-review:before {
+  content: "";
+}
+
+.flaticon-padlock:before {
+  content: "";
+}
+
+.flaticon-enter:before {
+  content: "";
+}
+/*# sourceMappingURL=flaticon.css.map */

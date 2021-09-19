@@ -1,0 +1,1701 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mediva - Doctor dashboard</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="flaticon/flaticon.css" />
+    <link rel="stylesheet" href="plugins/owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="plugins/owlcarousel/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="plugins/datetimepicker/jquery.datetimepicker.min.css" />
+    <link rel="stylesheet" href="plugins/odometer/odometer-theme-default.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" />
+    <link rel="stylesheet" href="plugins/month/month.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body style="height: 100%; overflow: hidden">
+    <div class="preloader">
+      <div class="loader"></div>
+    </div>
+
+    <header>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-12">
+            <ul class="header_information">
+              <li>
+                <i class="flaticon-wall-clock"></i>
+                Time: 9:00 AM - 18:00 PM
+              </li>
+              <li>
+                <i class="flaticon-phone-call"></i>
+                Call us:
+                <a href="tel:882563789966">(+882) 563 789 966</a>
+              </li>
+              <li>
+                <i class="flaticon-email"></i>
+                Email:
+                <a href="mailto:hello@mediva.com">hello@mediva.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <ul class="header_optional">
+              <li>
+                <a href="" target="_blank">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" target="_blank">
+                  <i class="fab fa-pinterest-p"></i>
+                </a>
+                <a href="" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav>
+      <div class="main_nav">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2 d-flex align-items-center">
+              <div class="nav_logo">
+                <a href="index.html">
+                  <img src="images/logo.png" alt="brand" />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-10">
+              <div class="row">
+                <div class="col-md-9">
+                  <ul class="nav_menu d-flex justify-content-center align-items-center">
+                    <li class="nav_item">
+                      <a href="index.html" class="nav_link">Home</a>
+                    </li>
+                    <li class="nav_item">
+                      <a href="about.html" class="nav_link">About</a>
+                    </li>
+                    <li class="nav_item">
+                      <a class="nav_link">Pages
+                        <i class="fas fa-chevron-down"></i>
+                      </a>
+                      <ul class="dropdown_menu">
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="terms-of-service.html">Terms of service</a></li>
+                        <li><a href="privacy-policy.html">Privacy policy</a></li>
+                        <li><a href="error-404.html">Error page</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav_item">
+                      <a class="nav_link">Doctors
+                        <i class="fas fa-chevron-down"></i>
+                      </a>
+                      <ul class="dropdown_menu">
+                        <li><a href="doctors.html">Doctors</a></li>
+                        <li><a href="doctor-details.html">Doctor details</a></li>
+                        <li><a href="doctor-dashboard.html">Doctor dashboard</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav_item">
+                      <a class="nav_link">Services
+                        <i class="fas fa-chevron-down"></i>
+                      </a>
+                      <ul class="dropdown_menu">
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="service-details.html">Service details</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav_item">
+                      <a class="nav_link">Blog
+                        <i class="fas fa-chevron-down"></i>
+                      </a>
+                      <ul class="dropdown_menu">
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="blog-details.html">Blog details</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav_item">
+                      <a href="contact.html" class="nav_link">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-3 d-flex align-items-center justify-content-end">
+                  <div class="option_item">
+                    <a href="book-appointment.html" class="def_btn">Make an appointment</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="responsive_nav">
+        <div class="container">
+          <div class="pos_rel">
+            <div class="row">
+              <div class="col-6">
+                <div class="nav_logo">
+                  <a href="index.html">
+                    <img src="images/logo.png" alt="brand" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-6 d-flex justify-content-end align-items-center">
+                <button class="dot_menu">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </button>
+                <div class="option_item">
+                  <a href="book-appointment.html" class="def_btn">Make an appointment</a>
+                </div>
+                <button class="burger_menu">
+                  <div></div>
+                </button>
+                <ul class="menu_reveal">
+                  <li class="nav_item">
+                    <a href="index.html" class="nav_link">Home</a>
+                  </li>
+                  <li class="nav_item">
+                    <a href="about.html" class="nav_link">About</a>
+                  </li>
+                  <li class="nav_item dropdown">
+                    <a class="nav_link">Pages
+                      <button type="button"></button>
+                    </a>
+                    <ul>
+                      <li><a href="login.html">Login</a></li>
+                      <li><a href="register.html">Register</a></li>
+                      <li><a href="faq.html">FAQ</a></li>
+                      <li><a href="terms-of-service.html">Terms of service</a></li>
+                      <li><a href="privacy-policy.html">Privacy policy</a></li>
+                      <li><a href="error-404.html">Error page</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav_item dropdown">
+                    <a class="nav_link">Doctors
+                      <button type="button"></button>
+                    </a>
+                    <ul>
+                      <li><a href="doctors.html">Doctors</a></li>
+                      <li><a href="doctor-details.html">Doctor details</a></li>
+                      <li><a href="doctor-dashboard.html">Doctor dashboard</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav_item dropdown">
+                    <a class="nav_link">Services
+                      <button type="button"></button>
+                    </a>
+                    <ul>
+                      <li><a href="services.html">Services</a></li>
+                      <li><a href="service-details.html">Service details</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav_item dropdown">
+                    <a class="nav_link">Blog
+                      <button type="button"></button>
+                    </a>
+                    <ul>
+                      <li><a href="blog.html">Blog</a></li>
+                      <li><a href="blog-details.html">Blog details</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav_item">
+                    <a href="contact.html" class="nav_link">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="page_banner_area2">
+      <div class="d-table w-100 h-100">
+        <div class="d-table-cell align-middle">
+          <div class="container">
+            <div class="content">
+              <h2>Doctor dashboard</h2>
+              <ul>
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>Doctor dashboard</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="doc_dashboard_area ptb-100">
+      <div class="container-fluid">
+        <div class="row tab_menu">
+          <div class="col-12 col-lg-3">
+            <div class="dashboard_profile">
+              <div class="profile_box">
+                <img src="images/profile.jpg" alt="doctor's profile image" />
+                <div class="profile_desc">
+                  <h3>Dr. Addison Smith</h3>
+                  <p>MBBS, M.D of medicine</p>
+                  <span>BDS, FCPS (Hons), Ph.D. (USA)</span>
+                </div>
+              </div>
+              <div class="dashboard_profile_info">
+                <ul class="info_list nav_tabs">
+                  <li class="nav_item">
+                    <button type="button" class="active">
+                      Dashboard
+                      <i class="flaticon-dashboard"></i>
+                    </button>
+                  </li>
+                  <li class="nav_item">
+                    <button type="button">
+                      Appointments
+                      <i class="flaticon-appointment"></i>
+                    </button>
+                  </li>
+                  <li class="nav_item">
+                    <button type="button">
+                      Patients
+                      <i class="flaticon-medical"></i>
+                    </button>
+                  </li>
+                  <li class="nav_item">
+                    <button type="button">
+                      Schedule time
+                      <i class="flaticon-calendar"></i>
+                    </button>
+                  </li>
+                  <li class="nav_item">
+                    <button type="button">
+                      Invoices
+                      <i class="flaticon-invoice"></i>
+                    </button>
+                  </li>
+                  <li class="nav_item">
+                    <button type="button">
+                      Reviews
+                      <i class="flaticon-review"></i>
+                    </button>
+                  </li>
+                  <li class="nav_item">
+                    <a href="change-password.html">
+                      Change password
+                      <i class="flaticon-padlock"></i>
+                    </a>
+                  </li>
+                  <!-- <li class="nav_item">
+                    <button type="button">
+                      Login
+                      <i class="flaticon-enter"></i>
+                    </button>
+                  </li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-9">
+            <div class="tab_content">
+              <div class="tab_pane active">
+                <div class="row">
+                  <div class="col-lg-3 col-md-6">
+                    <div class="single_stats_box">
+                      <div class="icon">
+                        <i class="flaticon-like"></i>
+                      </div>
+                      <h3>783K</h3>
+                      <p>Total patient</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <div class="single_stats_box bg_2">
+                      <div class="icon">
+                        <i class="flaticon-doctor"></i>
+                      </div>
+                      <h3>145</h3>
+                      <p>Doctor</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <div class="single_stats_box bg_3">
+                      <div class="icon">
+                        <i class="flaticon-appointment"></i>
+                      </div>
+                      <h3>120</h3>
+                      <p>Appointments</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <div class="single_stats_box bg_4">
+                      <div class="icon">
+                        <i class="flaticon-money"></i>
+                      </div>
+                      <h3>$545</h3>
+                      <p>Doctor earning</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="doctors_appointment">
+                  <div class="title_box">
+                    <h3>Patients appointments</h3>
+                    <div class="btn_box">
+                      <button type="button" class="active">Upcoming</button>
+                      <button type="button">Today</button>
+                    </div>
+                  </div>
+                  <table class="doctors_table">
+                    <thead>
+                      <tr>
+                        <th>Patient name</th>
+                        <th>Appt date</th>
+                        <th>Purpose</th>
+                        <th>Type</th>
+                        <th>Amount</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="name_box">
+                            <div class="image">
+                              <img src="images/dashboard-9.jpg" alt="" />
+                            </div>
+                            <h5>Mitsue Dove</h5>
+                            <span class="designation">#865992</span>
+                          </div>
+                        </td>
+                        <td>
+                          <p>20 Nov 2021</p>
+                          <span>12:00PM</span>
+                        </td>
+                        <td>
+                          <p>General</p>
+                        </td>
+                        <td>
+                          <p>Old patient</p>
+                        </td>
+                        <td>
+                          <p>$50.00</p>
+                        </td>
+                        <td>
+                          <button type="button" class="view">View</button>
+                          <button type="button" class="accept">Accept</button>
+                          <button type="button" class="cancel">Cancel</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="name_box">
+                            <div class="image">
+                              <img src="images/dashboard-10.jpg" alt="" />
+                            </div>
+                            <h5>Ellen Cranford</h5>
+                            <span class="designation">#865992</span>
+                          </div>
+                        </td>
+                        <td>
+                          <p>20 Nov 2021</p>
+                          <span>12:00PM</span>
+                        </td>
+                        <td>
+                          <p>General</p>
+                        </td>
+                        <td>
+                          <p>Old patient</p>
+                        </td>
+                        <td>
+                          <p>$50.00</p>
+                        </td>
+                        <td>
+                          <button type="button" class="view">View</button>
+                          <button type="button" class="accept">Accept</button>
+                          <button type="button" class="cancel">Cancel</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="name_box">
+                            <div class="image">
+                              <img src="images/dashboard-11.jpg" alt="" />
+                            </div>
+                            <h5>Viki Hankins</h5>
+                            <span class="designation">#865992</span>
+                          </div>
+                        </td>
+                        <td>
+                          <p>20 Nov 2021</p>
+                          <span>12:00PM</span>
+                        </td>
+                        <td>
+                          <p>General</p>
+                        </td>
+                        <td>
+                          <p>New patient</p>
+                        </td>
+                        <td>
+                          <p>$50.00</p>
+                        </td>
+                        <td>
+                          <button type="button" class="view">View</button>
+                          <button type="button" class="accept">Accept</button>
+                          <button type="button" class="cancel">Cancel</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="name_box">
+                            <div class="image">
+                              <img src="images/dashboard-12.jpg" alt="" />
+                            </div>
+                            <h5>Shery Corlett</h5>
+                            <span class="designation">#865992</span>
+                          </div>
+                        </td>
+                        <td>
+                          <p>20 Nov 2021</p>
+                          <span>12:00PM</span>
+                        </td>
+                        <td>
+                          <p>General</p>
+                        </td>
+                        <td>
+                          <p>Old patient</p>
+                        </td>
+                        <td>
+                          <p>$50.00</p>
+                        </td>
+                        <td>
+                          <button type="button" class="view">View</button>
+                          <button type="button" class="accept">Accept</button>
+                          <button type="button" class="cancel">Cancel</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="name_box">
+                            <div class="image">
+                              <img src="images/dashboard-13.jpg" alt="" />
+                            </div>
+                            <h5>Jame Kolar</h5>
+                            <span class="designation">#865992</span>
+                          </div>
+                        </td>
+                        <td>
+                          <p>20 Nov 2021</p>
+                          <span>12:00PM</span>
+                        </td>
+                        <td>
+                          <p>General</p>
+                        </td>
+                        <td>
+                          <p>New patient</p>
+                        </td>
+                        <td>
+                          <p>$50.00</p>
+                        </td>
+                        <td>
+                          <button type="button" class="view">View</button>
+                          <button type="button" class="accept">Accept</button>
+                          <button type="button" class="cancel">Cancel</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="name_box">
+                            <div class="image">
+                              <img src="images/dashboard-14.jpg" alt="" />
+                            </div>
+                            <h5>Damon Alvelo</h5>
+                            <span class="designation">#865992</span>
+                          </div>
+                        </td>
+                        <td>
+                          <p>20 Nov 2021</p>
+                          <span>12:00PM</span>
+                        </td>
+                        <td>
+                          <p>General</p>
+                        </td>
+                        <td>
+                          <p>New patient</p>
+                        </td>
+                        <td>
+                          <p>$50.00</p>
+                        </td>
+                        <td>
+                          <button type="button" class="view">View</button>
+                          <button type="button" class="accept">Accept</button>
+                          <button type="button" class="cancel">Cancel</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="name_box">
+                            <div class="image">
+                              <img src="images/dashboard-15.jpg" alt="" />
+                            </div>
+                            <h5>Amelia Anna</h5>
+                            <span class="designation">#865992</span>
+                          </div>
+                        </td>
+                        <td>
+                          <p>20 Nov 2021</p>
+                          <span>12:00PM</span>
+                        </td>
+                        <td>
+                          <p>General</p>
+                        </td>
+                        <td>
+                          <p>New patient</p>
+                        </td>
+                        <td>
+                          <p>$50.00</p>
+                        </td>
+                        <td>
+                          <button type="button" class="view">View</button>
+                          <button type="button" class="accept">Accept</button>
+                          <button type="button" class="cancel">Cancel</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="name_box">
+                            <div class="image">
+                              <img src="images/dashboard-16.jpg" alt="" />
+                            </div>
+                            <h5>Sasha Abele</h5>
+                            <span class="designation">#865992</span>
+                          </div>
+                        </td>
+                        <td>
+                          <p>20 Nov 2021</p>
+                          <span>12:00PM</span>
+                        </td>
+                        <td>
+                          <p>General</p>
+                        </td>
+                        <td>
+                          <p>Old patient</p>
+                        </td>
+                        <td>
+                          <p>$50.00</p>
+                        </td>
+                        <td>
+                          <button type="button" class="view">View</button>
+                          <button type="button" class="accept">Accept</button>
+                          <button type="button" class="cancel">Cancel</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="tab_pane">
+                <ul class="appointments_list">
+                  <div class="appointment_box">
+                    <div class="image_box">
+                      <img src="images/dashboard-10.jpg" alt="" />
+                    </div>
+                    <div class="appointment_info">
+                      <h4>Mary Astor</h4>
+                      <ul class="info_list">
+                        <li>
+                          <i class="flaticon-wall-clock"></i>
+                          20 November 2021, 09:30 AM
+                        </li>
+                        <li>
+                          <i class="flaticon-pin"></i>
+                          175 5th Ave Premium Area, UK
+                        </li>
+                        <li>
+                          <i class="flaticon-email"></i>
+                          <a href="mailto:hello@mediva.com">hello@mediva.com</a>
+                        </li>
+                        <li>
+                          <i class="flaticon-phone-call"></i>
+                          <a href="tel:882563789966">(+882) 563 789 966</a>
+                        </li>
+                      </ul>
+                      <div class="confirm_buttons">
+                        <button type="button" class="view">View</button>
+                        <button type="button" class="accept">Accept</button>
+                        <button type="button" class="cancel">Cancel</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="appointment_box">
+                    <div class="image_box">
+                      <img src="images/dashboard-11.jpg" alt="" />
+                    </div>
+                    <div class="appointment_info">
+                      <h4>Ellen Cranford</h4>
+                      <ul class="info_list">
+                        <li>
+                          <i class="flaticon-wall-clock"></i>
+                          20 November 2021, 09:30 AM
+                        </li>
+                        <li>
+                          <i class="flaticon-pin"></i>
+                          175 5th Ave Premium Area, UK
+                        </li>
+                        <li>
+                          <i class="flaticon-email"></i>
+                          <a href="mailto:hello@mediva.com">hello@mediva.com</a>
+                        </li>
+                        <li>
+                          <i class="flaticon-phone-call"></i>
+                          <a href="tel:882563789966">(+882) 563 789 966</a>
+                        </li>
+                      </ul>
+                      <div class="confirm_buttons">
+                        <button type="button" class="view">View</button>
+                        <button type="button" class="accept">Accept</button>
+                        <button type="button" class="cancel">Cancel</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="appointment_box">
+                    <div class="image_box">
+                      <img src="images/dashboard-12.jpg" alt="" />
+                    </div>
+                    <div class="appointment_info">
+                      <h4>Viki Hankins</h4>
+                      <ul class="info_list">
+                        <li>
+                          <i class="flaticon-wall-clock"></i>
+                          20 November 2021, 09:30 AM
+                        </li>
+                        <li>
+                          <i class="flaticon-pin"></i>
+                          175 5th Ave Premium Area, UK
+                        </li>
+                        <li>
+                          <i class="flaticon-email"></i>
+                          <a href="mailto:hello@mediva.com">hello@mediva.com</a>
+                        </li>
+                        <li>
+                          <i class="flaticon-phone-call"></i>
+                          <a href="tel:882563789966">(+882) 563 789 966</a>
+                        </li>
+                      </ul>
+                      <div class="confirm_buttons">
+                        <button type="button" class="view">View</button>
+                        <button type="button" class="accept">Accept</button>
+                        <button type="button" class="cancel">Cancel</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="appointment_box">
+                    <div class="image_box">
+                      <img src="images/dashboard-13.jpg" alt="" />
+                    </div>
+                    <div class="appointment_info">
+                      <h4>Shery Corlett</h4>
+                      <ul class="info_list">
+                        <li>
+                          <i class="flaticon-wall-clock"></i>
+                          20 November 2021, 09:30 AM
+                        </li>
+                        <li>
+                          <i class="flaticon-pin"></i>
+                          175 5th Ave Premium Area, UK
+                        </li>
+                        <li>
+                          <i class="flaticon-email"></i>
+                          <a href="mailto:hello@mediva.com">hello@mediva.com</a>
+                        </li>
+                        <li>
+                          <i class="flaticon-phone-call"></i>
+                          <a href="tel:882563789966">(+882) 563 789 966</a>
+                        </li>
+                      </ul>
+                      <div class="confirm_buttons">
+                        <button type="button" class="view">View</button>
+                        <button type="button" class="accept">Accept</button>
+                        <button type="button" class="cancel">Cancel</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="appointment_box">
+                    <div class="image_box">
+                      <img src="images/dashboard-14.jpg" alt="" />
+                    </div>
+                    <div class="appointment_info">
+                      <h4>Jame Kolar</h4>
+                      <ul class="info_list">
+                        <li>
+                          <i class="flaticon-wall-clock"></i>
+                          20 November 2021, 09:30 AM
+                        </li>
+                        <li>
+                          <i class="flaticon-pin"></i>
+                          175 5th Ave Premium Area, UK
+                        </li>
+                        <li>
+                          <i class="flaticon-email"></i>
+                          <a href="mailto:hello@mediva.com">hello@mediva.com</a>
+                        </li>
+                        <li>
+                          <i class="flaticon-phone-call"></i>
+                          <a href="tel:882563789966">(+882) 563 789 966</a>
+                        </li>
+                      </ul>
+                      <div class="confirm_buttons">
+                        <button type="button" class="view">View</button>
+                        <button type="button" class="accept">Accept</button>
+                        <button type="button" class="cancel">Cancel</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="appointment_box">
+                    <div class="image_box">
+                      <img src="images/dashboard-15.jpg" alt="" />
+                    </div>
+                    <div class="appointment_info">
+                      <h4>Damon Alvelo</h4>
+                      <ul class="info_list">
+                        <li>
+                          <i class="flaticon-wall-clock"></i>
+                          20 November 2021, 09:30 AM
+                        </li>
+                        <li>
+                          <i class="flaticon-pin"></i>
+                          175 5th Ave Premium Area, UK
+                        </li>
+                        <li>
+                          <i class="flaticon-email"></i>
+                          <a href="mailto:hello@mediva.com">hello@mediva.com</a>
+                        </li>
+                        <li>
+                          <i class="flaticon-phone-call"></i>
+                          <a href="tel:882563789966">(+882) 563 789 966</a>
+                        </li>
+                      </ul>
+                      <div class="confirm_buttons">
+                        <button type="button" class="view">View</button>
+                        <button type="button" class="accept">Accept</button>
+                        <button type="button" class="cancel">Cancel</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="appointment_box">
+                    <div class="image_box">
+                      <img src="images/dashboard-16.jpg" alt="" />
+                    </div>
+                    <div class="appointment_info">
+                      <h4>Amelia Anna</h4>
+                      <ul class="info_list">
+                        <li>
+                          <i class="flaticon-wall-clock"></i>
+                          20 November 2021, 09:30 AM
+                        </li>
+                        <li>
+                          <i class="flaticon-pin"></i>
+                          175 5th Ave Premium Area, UK
+                        </li>
+                        <li>
+                          <i class="flaticon-email"></i>
+                          <a href="mailto:hello@mediva.com">hello@mediva.com</a>
+                        </li>
+                        <li>
+                          <i class="flaticon-phone-call"></i>
+                          <a href="tel:882563789966">(+882) 563 789 966</a>
+                        </li>
+                      </ul>
+                      <div class="confirm_buttons">
+                        <button type="button" class="view">View</button>
+                        <button type="button" class="accept">Accept</button>
+                        <button type="button" class="cancel">Cancel</button>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+              <div class="tab_pane">
+                <div class="patients_list">
+                  <div class="title_box">
+                    <div class="row align-items-center">
+                      <div class="col-xl-6">
+                        <h3>Patients list</h3>
+                      </div>
+                      <div class="col-xl-6">
+                        <form action="" class="search_form">
+                          <input type="search" name="" id="" placeholder="Search..." />
+                          <button type="submit">
+                            <i class="flaticon-loupe"></i>
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <table class="patients_table">
+                    <thead>
+                      <tr>
+                        <th>Patient name</th>
+                        <th>Sex</th>
+                        <th>Address</th>
+                        <th>Mobile</th>
+                        <th>Age</th>
+                        <th>Blood group</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="name_box">
+                            <div class="image">
+                              <img src="images/dashboard-9.jpg" alt="" />
+                            </div>
+                            <h5>Mary Astor</h5>
+                          </div>
+                        </td>
+                        <td>
+                          <p>Male</p>
+                        </td>
+                        <td>
+                          <p>175 5th Ave Area, UK</p>
+                        </td>
+                        <td>
+                          <p>(+882) 563 789 966</p>
+                        </td>
+                        <td>
+                          <p>29 years</p>
+                        </td>
+                        <td>
+                          <p>O+</p>
+                        </td>
+                        <td>
+                          <button type="button" class="edit">Edit</button>
+                          <button type="button" class="cancel">Cancel</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="name_box">
+                            <div class="image">
+                              <img src="images/dashboard-10.jpg" alt="" />
+                            </div>
+                            <h5>Paul Albert</h5>
+                          </div>
+                        </td>
+                        <td>
+                          <p>Male</p>
+                        </td>
+                        <td>
+                          <p>175 5th Ave Area, UK</p>
+                        </td>
+                        <td>
+                          <p>(+882) 563 789 966</p>
+                        </td>
+                        <td>
+                          <p>29 years</p>
+                        </td>
+                        <td>
+                          <p>O+</p>
+                        </td>
+                        <td>
+                          <button type="button" class="edit">Edit</button>
+                          <button type="button" class="cancel">Cancel</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="name_box">
+                            <div class="image">
+                              <img src="images/dashboard-11.jpg" alt="" />
+                            </div>
+                            <h5>Ellen Cranford</h5>
+                          </div>
+                        </td>
+                        <td>
+                          <p>Male</p>
+                        </td>
+                        <td>
+                          <p>175 5th Ave Area, UK</p>
+                        </td>
+                        <td>
+                          <p>(+882) 563 789 966</p>
+                        </td>
+                        <td>
+                          <p>29 years</p>
+                        </td>
+                        <td>
+                          <p>O+</p>
+                        </td>
+                        <td>
+                          <button type="button" class="edit">Edit</button>
+                          <button type="button" class="cancel">Cancel</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="name_box">
+                            <div class="image">
+                              <img src="images/dashboard-12.jpg" alt="" />
+                            </div>
+                            <h5>Viki Hankins</h5>
+                          </div>
+                        </td>
+                        <td>
+                          <p>Male</p>
+                        </td>
+                        <td>
+                          <p>175 5th Ave Area, UK</p>
+                        </td>
+                        <td>
+                          <p>(+882) 563 789 966</p>
+                        </td>
+                        <td>
+                          <p>29 years</p>
+                        </td>
+                        <td>
+                          <p>O+</p>
+                        </td>
+                        <td>
+                          <button type="button" class="edit">Edit</button>
+                          <button type="button" class="cancel">Cancel</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="name_box">
+                            <div class="image">
+                              <img src="images/dashboard-13.jpg" alt="" />
+                            </div>
+                            <h5>Jame Kolar</h5>
+                          </div>
+                        </td>
+                        <td>
+                          <p>Male</p>
+                        </td>
+                        <td>
+                          <p>175 5th Ave Area, UK</p>
+                        </td>
+                        <td>
+                          <p>(+882) 563 789 966</p>
+                        </td>
+                        <td>
+                          <p>29 years</p>
+                        </td>
+                        <td>
+                          <p>O+</p>
+                        </td>
+                        <td>
+                          <button type="button" class="edit">Edit</button>
+                          <button type="button" class="cancel">Cancel</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="name_box">
+                            <div class="image">
+                              <img src="images/dashboard-14.jpg" alt="" />
+                            </div>
+                            <h5>Mitsue Dove</h5>
+                          </div>
+                        </td>
+                        <td>
+                          <p>MaFemalele</p>
+                        </td>
+                        <td>
+                          <p>175 5th Ave Area, UK</p>
+                        </td>
+                        <td>
+                          <p>(+882) 563 789 966</p>
+                        </td>
+                        <td>
+                          <p>29 years</p>
+                        </td>
+                        <td>
+                          <p>O+</p>
+                        </td>
+                        <td>
+                          <button type="button" class="edit">Edit</button>
+                          <button type="button" class="cancel">Cancel</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="name_box">
+                            <div class="image">
+                              <img src="images/dashboard-15.jpg" alt="" />
+                            </div>
+                            <h5>Ellen Cranford</h5>
+                          </div>
+                        </td>
+                        <td>
+                          <p>Male</p>
+                        </td>
+                        <td>
+                          <p>175 5th Ave Area, UK</p>
+                        </td>
+                        <td>
+                          <p>(+882) 563 789 966</p>
+                        </td>
+                        <td>
+                          <p>29 years</p>
+                        </td>
+                        <td>
+                          <p>O+</p>
+                        </td>
+                        <td>
+                          <button type="button" class="edit">Edit</button>
+                          <button type="button" class="cancel">Cancel</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="name_box">
+                            <div class="image">
+                              <img src="images/dashboard-16.jpg" alt="" />
+                            </div>
+                            <h5>Damon Alvelo</h5>
+                          </div>
+                        </td>
+                        <td>
+                          <p>Male</p>
+                        </td>
+                        <td>
+                          <p>175 5th Ave Area, UK</p>
+                        </td>
+                        <td>
+                          <p>(+882) 563 789 966</p>
+                        </td>
+                        <td>
+                          <p>29 years</p>
+                        </td>
+                        <td>
+                          <p>O+</p>
+                        </td>
+                        <td>
+                          <button type="button" class="edit">Edit</button>
+                          <button type="button" class="cancel">Cancel</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="name_box">
+                            <div class="image">
+                              <img src="images/dashboard-5.jpg" alt="" />
+                            </div>
+                            <h5>Shery Corlett</h5>
+                          </div>
+                        </td>
+                        <td>
+                          <p>Female</p>
+                        </td>
+                        <td>
+                          <p>175 5th Ave Area, UK</p>
+                        </td>
+                        <td>
+                          <p>(+882) 563 789 966</p>
+                        </td>
+                        <td>
+                          <p>29 years</p>
+                        </td>
+                        <td>
+                          <p>O+</p>
+                        </td>
+                        <td>
+                          <button type="button" class="edit">Edit</button>
+                          <button type="button" class="cancel">Cancel</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="name_box">
+                            <div class="image">
+                              <img src="images/dashboard-8.jpg" alt="" />
+                            </div>
+                            <h5>Paolo Dybala</h5>
+                          </div>
+                        </td>
+                        <td>
+                          <p>Female</p>
+                        </td>
+                        <td>
+                          <p>175 5th Ave Area, UK</p>
+                        </td>
+                        <td>
+                          <p>(+882) 563 789 966</p>
+                        </td>
+                        <td>
+                          <p>29 years</p>
+                        </td>
+                        <td>
+                          <p>O+</p>
+                        </td>
+                        <td>
+                          <button type="button" class="edit">Edit</button>
+                          <button type="button" class="cancel">Cancel</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="name_box">
+                            <div class="image">
+                              <img src="images/dashboard-7.jpg" alt="" />
+                            </div>
+                            <h5>Bryan Adams</h5>
+                          </div>
+                        </td>
+                        <td>
+                          <p>Male</p>
+                        </td>
+                        <td>
+                          <p>175 5th Ave Area, UK</p>
+                        </td>
+                        <td>
+                          <p>(+882) 563 789 966</p>
+                        </td>
+                        <td>
+                          <p>29 years</p>
+                        </td>
+                        <td>
+                          <p>O+</p>
+                        </td>
+                        <td>
+                          <button type="button" class="edit">Edit</button>
+                          <button type="button" class="cancel">Cancel</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="tab_pane">
+                <div class="schedule_time">
+                  <div class="title_box">
+                    <div class="row align-items-center">
+                      <div class="col-xl-6">
+                        <h3>Schedule time</h3>
+                      </div>
+                      <div class="col-xl-6">
+                        <form action="" class="search_form">
+                          <input type="search" name="" id="" placeholder="Search..." />
+                          <button type="submit">
+                            <i class="flaticon-loupe"></i>
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="calendar_content">
+                    <ul class="schedule_list">
+                      <li>
+                        <button type="button">Today</button>
+                      </li>
+                      <li>
+                        <button type="button" class="active">Month</button>
+                      </li>
+                      <li>
+                        <button type="button">Week</button>
+                      </li>
+                      <li>
+                        <button type="button">Day</button>
+                      </li>
+                    </ul>
+                    <div class="monthly" id="schedule_calendar"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab_pane">
+                <div class="invoices">
+                  <table class="invoices_table">
+                    <thead>
+                      <tr>
+                        <th>Invoice No:</th>
+                        <th>Patient</th>
+                        <th>Amount</th>
+                        <th>Paid on</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <p>IV-01</p>
+                        </td>
+                        <td>
+                          <h4>Mitsue Dove</h4>
+                          <span>#865992</span>
+                        </td>
+                        <td>
+                          <p>$450</p>
+                        </td>
+                        <td>
+                          <p>20 Nov 2021</p>
+                        </td>
+                        <td>
+                          <button type="button" class="view">View</button>
+                          <button type="button" class="print">Print</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p>IV-02</p>
+                        </td>
+                        <td>
+                          <h4>Ellen Cranford</h4>
+                          <span>#865995</span>
+                        </td>
+                        <td>
+                          <p>$250</p>
+                        </td>
+                        <td>
+                          <p>21 Nov 2021</p>
+                        </td>
+                        <td>
+                          <button type="button" class="view">View</button>
+                          <button type="button" class="print">Print</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p>IV-03</p>
+                        </td>
+                        <td>
+                          <h4>Viki Hankins</h4>
+                          <span>#865992</span>
+                        </td>
+                        <td>
+                          <p>$455</p>
+                        </td>
+                        <td>
+                          <p>22 Nov 2021</p>
+                        </td>
+                        <td>
+                          <button type="button" class="view">View</button>
+                          <button type="button" class="print">Print</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p>IV-04</p>
+                        </td>
+                        <td>
+                          <h4>Shery Corlett</h4>
+                          <span>#865892</span>
+                        </td>
+                        <td>
+                          <p>$410</p>
+                        </td>
+                        <td>
+                          <p>23 Nov 2021</p>
+                        </td>
+                        <td>
+                          <button type="button" class="view">View</button>
+                          <button type="button" class="print">Print</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p>IV-05</p>
+                        </td>
+                        <td>
+                          <h4>Jame Kolar</h4>
+                          <span>#865575</span>
+                        </td>
+                        <td>
+                          <p>$370</p>
+                        </td>
+                        <td>
+                          <p>24 Nov 2021</p>
+                        </td>
+                        <td>
+                          <button type="button" class="view">View</button>
+                          <button type="button" class="print">Print</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p>IV-06</p>
+                        </td>
+                        <td>
+                          <h4>Damon Alvelo</h4>
+                          <span>#885620</span>
+                        </td>
+                        <td>
+                          <p>$250</p>
+                        </td>
+                        <td>
+                          <p>25 Nov 2021</p>
+                        </td>
+                        <td>
+                          <button type="button" class="view">View</button>
+                          <button type="button" class="print">Print</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p>IV-07</p>
+                        </td>
+                        <td>
+                          <h4>Amelia Anna</h4>
+                          <span>#885630</span>
+                        </td>
+                        <td>
+                          <p>$520</p>
+                        </td>
+                        <td>
+                          <p>26 Nov 2021</p>
+                        </td>
+                        <td>
+                          <button type="button" class="view">View</button>
+                          <button type="button" class="print">Print</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p>IV-08</p>
+                        </td>
+                        <td>
+                          <h4>Sasha Abele</h4>
+                          <span>#885640</span>
+                        </td>
+                        <td>
+                          <p>$340</p>
+                        </td>
+                        <td>
+                          <p>27 Nov 2021</p>
+                        </td>
+                        <td>
+                          <button type="button" class="view">View</button>
+                          <button type="button" class="print">Print</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p>IV-09</p>
+                        </td>
+                        <td>
+                          <h4>Ellen Cranford</h4>
+                          <span>#885650</span>
+                        </td>
+                        <td>
+                          <p>$150</p>
+                        </td>
+                        <td>
+                          <p>28 Nov 2021</p>
+                        </td>
+                        <td>
+                          <button type="button" class="view">View</button>
+                          <button type="button" class="print">Print</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p>IV-10</p>
+                        </td>
+                        <td>
+                          <h4>Viki Hankins</h4>
+                          <span>#885660</span>
+                        </td>
+                        <td>
+                          <p>$250</p>
+                        </td>
+                        <td>
+                          <p>29 Nov 2021</p>
+                        </td>
+                        <td>
+                          <button type="button" class="view">View</button>
+                          <button type="button" class="print">Print</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="tab_pane">
+                <ul class="reviews_list">
+                  <li class="review_box">
+                    <div class="image_box">
+                      <img src="images/dashboard-9.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                      <h3>Terry Bradshaw</h3>
+                      <span>15 Sep 2021, 09:30 AM</span>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco labor.
+                      </p>
+                      <button type="button" class="reply_btn">Reply now</button>
+                      <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="review_box">
+                    <div class="image_box">
+                      <img src="images/dashboard-10.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                      <h3>Mitsue Dove</h3>
+                      <span>15 Sep 2021, 09:30 AM</span>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco labor.
+                      </p>
+                      <button type="button" class="reply_btn">Reply now</button>
+                      <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="review_box">
+                    <div class="image_box">
+                      <img src="images/dashboard-11.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                      <h3>Viki Hankins</h3>
+                      <span>15 Sep 2021, 09:30 AM</span>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco labor.
+                      </p>
+                      <button type="button" class="reply_btn">Reply now</button>
+                      <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="review_box">
+                    <div class="image_box">
+                      <img src="images/dashboard-12.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                      <h3>Jame Kolar</h3>
+                      <span>15 Sep 2021, 09:30 AM</span>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco labor.
+                      </p>
+                      <button type="button" class="reply_btn">Reply now</button>
+                      <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="review_box">
+                    <div class="image_box">
+                      <img src="images/dashboard-13.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                      <h3>Damon Alvelo</h3>
+                      <span>15 Sep 2021, 09:30 AM</span>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco labor.
+                      </p>
+                      <button type="button" class="reply_btn">Reply now</button>
+                      <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter_area ptb-100">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="newsletter_content">
+              <h2>Subscribe your email</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <form class="newsletter_form">
+              <input type="email" name="" id="" placeholder="Enter your email" />
+              <button type="submit">Subscribe now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="main_footer_area pt-100 pb-70">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-lg-3">
+              <div class="single_footer_widget">
+                <a href="index.html">
+                  <img src="images/logo-2.png" alt="brand" />
+                </a>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
+                  incididunt ut labore dolore magna aliqua.
+                </p>
+                <ul class="footer_social">
+                  <li>
+                    <a href="">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="fab fa-pinterest-p"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div class="single_footer_widget">
+                <h2>Departments</h2>
+                <ul class="quick_links">
+                  <li>
+                    <a href="service-details.html">Dental services</a>
+                  </li>
+                  <li>
+                    <a href="service-details.html">Emergency medicine</a>
+                  </li>
+                  <li>
+                    <a href="service-details.html">Ophthalmology</a>
+                  </li>
+                  <li>
+                    <a href="service-details.html">Orthopedic surgery</a>
+                  </li>
+                  <li>
+                    <a href="service-details.html">Neurosurgery</a>
+                  </li>
+                  <li>
+                    <a href="service-details.html">Radiation oncology</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div class="single_footer_widget">
+                <h2>Opening hours</h2>
+                <ul class="opening_hours">
+                  <li>Mon - Tues: <span>6:00 - 10:00</span></li>
+                  <li>Wed - Thurs: <span>6:00 - 10:00</span></li>
+                  <li>Sat - Sun: <span>6:00 - 10:00</span></li>
+                  <li>Friday: <span>Closed</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div class="single_footer_widget">
+                <h2>Get in touch</h2>
+                <ul class="contact_list">
+                  <li>
+                    <i class="flaticon-phone-call"></i>
+                    <span>Phone</span>
+                    <a href="tel:882569756">882-569-756</a>
+                  </li>
+                  <li>
+                    <i class="flaticon-email"></i>
+                    <span>Email</span>
+                    <a href="mailto:hello@mediva.com">hello@mediva.com</a>
+                  </li>
+                  <li>
+                    <i class="flaticon-pin"></i>
+                    <span>Address</span>
+                    175 5th Ave Premium Area, UK
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright_area">
+        <div class="container">
+          <p>
+            Copyright © 2021 Mediva. All rights reserved by
+            <a href="https://envytheme.com/" target="_blank">EnvyTheme</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <button type="button" class="go_top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="plugins/owlcarousel/owl.carousel.min.js"></script>
+    <script src="plugins/niceselect/jquery.nice-select.min.js"></script>
+    <script src="plugins/datetimepicker/jquery.datetimepicker.full.min.js"></script>
+    <script src="plugins/appear/jquery.appear.min.js"></script>
+    <script src="plugins/odometer/odometer.min.js"></script>
+    <script src="plugins/month/month.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
