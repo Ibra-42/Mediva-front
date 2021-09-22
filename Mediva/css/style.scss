@@ -1744,6 +1744,7 @@ section.spec_doc_area {
   .doc_card {
     position: relative;
     margin-bottom: 30px;
+    overflow: hidden;
     a {
       color: $color_2;
       img {
