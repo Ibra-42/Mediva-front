@@ -2032,7 +2032,6 @@ section.news_area .single_blog .blog_content a.blog_btn {
 section.spec_doc_area .doc_card {
   position: relative;
   margin-bottom: 30px;
-  overflow: hidden;
 }
 
 section.spec_doc_area .doc_card a {
@@ -2056,6 +2055,7 @@ section.spec_doc_area .doc_card .content {
   position: absolute;
   bottom: 0;
   left: 0;
+  overflow: hidden;
 }
 
 section.spec_doc_area .doc_card .content h3 {
