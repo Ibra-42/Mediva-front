@@ -48,7 +48,10 @@ $(document).ready(function () {
     }
   });
   $("button.go_top").click(function () {
-    $("html, body").animate({ scrollTop: "0" }, 1000);
+    var dist = $(window).scrollTop();
+    var speed = dist / 2;
+
+    $("html, body").animate({ scrollTop: "0" }, speed);
     return false;
   });
 
